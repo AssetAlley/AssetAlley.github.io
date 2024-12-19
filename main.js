@@ -27,6 +27,16 @@ function showCard(index) {
           card.style.display = 'none';
       }
   });
+
+  let tabs = document.querySelectorAll('.course-tab');
+  tabs.forEach((tab, i) => {
+      if (i === index) {
+          tab.classList.add('active');
+      } else {
+          tab.classList.remove('active');
+      }
+  });
+
   tabIndex = index;
   timer = window.setInterval(autoSwitchTab, 5000);
 }
