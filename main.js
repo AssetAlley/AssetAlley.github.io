@@ -28,7 +28,7 @@ function showCard(index) {
       }
   });
 
-  let tabs = document.querySelectorAll('.course-tab');
+  let tabs = document.querySelectorAll('.carousel-tab');
   tabs.forEach((tab, i) => {
       if (i === index) {
           tab.classList.add('active');
